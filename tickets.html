@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="style/utils.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700&family=Space+Mono&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Tickets</title>
+</head>
+
+<body>
+    <div class="container w-full flex ">
+        <div class="sidebar">
+            <div class="logo">
+                <img src="assets/images/finalMouseLogo.png" alt="">
+            </div>
+            <nav>
+                <ul class="nav-ul">
+                    <li class="active"><a href="#"><i class="fa-solid fa-signal"></i>Analytics</a></li>
+                    <li><a href="#"><i class="fa-solid fa-ticket"></i>Tickets</a></li>
+                    <li><a href="#"><i class="fa-solid fa-user"></i>Customers</a></li>
+                    <li><a href="#"><i class="fa-solid fa-server"></i>Hardware</a></li>
+                    <li><a href="#"><i class="fa-solid fa-people-group"></i>Team</a></li>
+                    <li><a href="#"><i class="fa-solid fa-gear"></i>Settings</a></li>
+                    <li><a href="#"><i class="fa-solid fa-tag"></i>Tag Manager</a></li>
+                </ul>
+            </nav>
+            <div class="logout">
+                <a href=""><i class="fa-solid fa-up-right-from-square"></i>Logout</a>
+            </div>
+        </div>
+        <!-- sidebar ---- end  -->
+        <div class="right-area w-full">
+            <div class="right-container  flex justify-space">
+                <div class="title">
+                    <h2>Tickets</h2>
+
+                </div>
+                <div class="create-ticket">
+                    <button id="myBtn"><i class="fa-solid fa-circle-plus"></i>Create Ticket</button>
+                </div>
+            </div>
+            <div class="max-w-con ">
+                <div class="flex align-items justify-space">
+                    <div class="tab">
+                        <button class="tablinks" onclick="ticketData(event, 'all')">All</button>
+                        <button class="tablinks" onclick="ticketData(event, 'awaiting')">Awaiting arrival (12)</button>
+                        <button class="tablinks" onclick="ticketData(event, 'queue')">In-queue(1)</button>
+                        <button class="tablinks" onclick="ticketData(event, 'Tokyo')">In-progress (14)</button>
+                        <button class="tablinks" onclick="ticketData(event, 'Tokyo')">Custom1 (26)</button>
+                        <button class="tablinks" onclick="ticketData(event, 'Tokyo')">Custom2 (26)</button>
+                        <!-- <button class="tablinks" onclick="ticketData(event, 'Tokyo')">Custom3 (26)</button>
+                        <button class="tablinks" onclick="ticketData(event, 'Tokyo')">Custom4 (26)</button> -->
+                    </div>
+                    <div class="search">
+                        <input type="search" name="searchcustomer" id="search" placeholder="Search by RMA, Issue or Status">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </div>
+                </div>
+                <div class="">
+                    <!-- Tab content -->
+                    <div id="all" class="tabcontent">
+                        <div class="info-back ">
+                            <div class="flex ">
+                                <h4>RMA</h4>
+                                <h4>Status</h4>
+                                <h4>Customer Email</h4>
+                                <h4>Hardware</h4>
+                                <h4>Updated at</h4>
+                                <h4>Actions</h4>
+                            </div>
+                            <div class="flex">
+                                <h4>0011754379...</h4>
+                                <h4>Awaiting arrival</h4>
+                                <h4>georgia.young@example.com</h4>
+                                <h4>Starlight-12 Poseidon</h4>
+                                <h4>15 May 2020 8:30 am</h4>
+                                <div class="edit-del">
+                                    <i class="fa-regular fa-eye"></i>
+                                    <i class="fa-regular fa-pen-to-square"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="awaiting" class="tabcontent">
+                        <h3>Paris</h3>
+                        <p>Paris is the capital of France.</p>
+                    </div>
+
+                    <div id="queue" class="tabcontent">
+                        <h3>Tokyo</h3>
+                        <p>Tokyo is the capital of Japan.</p>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+
+
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>
