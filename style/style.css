@@ -144,7 +144,8 @@ nav {
 
 nav ul {
 
-    font-size: 18px;
+    font-size: 14px;
+    margin-bottom: 25%;
 
 }
 
@@ -154,6 +155,9 @@ nav ul li {
     margin-top: 2rem;
     transition: all 0.5s;
     /* width: 100% !important; */
+    cursor: pointer;
+    transition: all 0.5s;
+    border-radius: 5px;
 
 }
 
@@ -162,17 +166,28 @@ nav ul li a {
     transition: all 0.5s;
 
 }
+nav ul li:hover{
+    background-color: #3F3F46;
+    color: #ffffff;
+}
+nav ul li:hover .hover-a{
+    color: #ffffff;
+}
+nav ul li a:hover {
+    color: #A1A1AA;
+    transition: all 0.5s;
+    border-radius: 5px;
+    color: #ffffff;
+}
 
 .fa-solid {
     margin-right: 2rem;
 }
 
-nav ul :hover {
-    color: #ffffff;
-    border-radius: 5px;
-    background-color: #3F3F46;
-
-}
+ nav ul li:hover svg{ 
+    fill: #ffffff;/* this works */
+   
+  }
 
 /* nav ul:hover {
     .child-class {
@@ -184,7 +199,24 @@ nav ul :hover {
     bottom: 20px;
     left: 40px;
 }
-
+.progress{
+    position: relative;
+    background-color: #27272A;
+    margin: 20px 0;
+    padding: 20px;
+    color: #ffffff;
+    min-height: 170px;
+    border-radius: 10px;
+    justify-content: flex-end;
+    flex-direction: column;
+}
+.progress-img{
+    position: absolute;
+    top: -20%;
+}
+.progress-img-2{
+    width: 100%;
+}
 .logout a {
     color: #E4E4E7;
 }
@@ -320,11 +352,10 @@ nav ul :hover {
 
 /* The Modal (background) */
 .modal {
-    position: absolute;
-    display: none;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1;
+    margin: auto;
     left: 0;
     top: 0;
     width: 100%;
@@ -335,6 +366,9 @@ nav ul :hover {
 
     /* Black w/ opacity */
 }
+#mymodal{
+    display: none;
+}
 
 /* Modal Content */
 .modal-content {
@@ -344,6 +378,7 @@ nav ul :hover {
     border: 1px solid #888;
     max-width: 760px;
     line-height: 1.6;
+    margin: 1% auto;
     border-radius: 10px;
 }
 .customer-title{
@@ -423,6 +458,7 @@ form label ,label{
     outline: none;
     cursor: pointer;
     padding: 14px 16px;
+    font-size: 12px;
     transition: border 0.2s;
   }
   
@@ -457,11 +493,111 @@ form label ,label{
     top: 5px;
     color: #888;
   }
-  .info-back{
-    border: 1px solid #ccc;
+  table{
+    border: 1px solid #E4E4E7;
+    border-radius: 10px;
     padding: 20px;
+    margin-top: 20px;
+  }
+  table td{
+    padding: 20px 0;
+    color: #888;
+    font-size: 12px;
+  }
+  table th{
+    text-align: left;
+    padding: 20px 0;
+    font-size: 14px;
+  }
+  td span{
+    background-color: rgb(231, 103, 103);
+    border-radius: 20px;
+    color: #ffffff;
+    padding: 2px 10px;
+    font-size: 10px;
+  }
+  td .blue{
+    background-color: rgb(83, 34, 138);
+    border-radius: 20px;
+    color: #ffffff;
+    padding: 2px 10px;
+    font-size: 10px;
+  }
+  td .orange{
+    background-color: rgb(209, 130, 11);
+    border-radius: 20px;
+    color: #ffffff;
+    padding: 2px 10px;
+    font-size: 10px;
+  }
+  table .fa-regular{
+    margin-right: 10px;
+  }
+  .pagination{
+    justify-content: flex-end;
+    gap: 4%;
+    align-items: center;
+    padding: 20px 0;
+    font-size: 12px;
+  }
+  .pagination p{
+    padding: 4px 12px;
+    border-radius: 8px;
+    cursor: pointer;
+  }
+  .pagination p:hover{
+    background: black;
+    color: white;
+    transition: all 0.5s;
+  }
+  .pagination .active{
+    background: black;
+    color: white;
+    transition: all 0.5s;
+  }
+  .hardware-btn{
+    padding: 12px 20px;
+    background: black;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: all 0.5s;
+  }
+  .tech{
+    color: purple;
+  }
+  .admin{
+    color: rgb(39, 125, 255);
+  }
+ .tags{
+    padding: 20px;
+    border: 1px solid #dbdbdb;
+    border-radius: 10px;
+    margin-top: 20px;
+ }
+ .tag-item{
+    flex-wrap: wrap;
+ }
+ .tag-item p{
+    padding: 10px 20px;
+    border: 1px solid #d8d6d6;
+    margin: 10px;
+    border-radius: 7px;
+ }
+ .tag-item p.active{
+    color: white;
+    background-color: #000;
+ }
+ svg{
+    margin-right: 20px;
+ }
+ svg path {
+    margin-right: 20px;
+    transition: all 0.5s;
+}
 
-  }
-  .info-back h4{
-    flex-basis: 16%;
-  }
+svg:hover path {
+    fill: #ebebeb
+}

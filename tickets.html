@@ -24,15 +24,21 @@
             </div>
             <nav>
                 <ul class="nav-ul">
-                    <li class="active"><a href="#"><i class="fa-solid fa-signal"></i>Analytics</a></li>
-                    <li><a href="#"><i class="fa-solid fa-ticket"></i>Tickets</a></li>
-                    <li><a href="#"><i class="fa-solid fa-user"></i>Customers</a></li>
-                    <li><a href="#"><i class="fa-solid fa-server"></i>Hardware</a></li>
-                    <li><a href="#"><i class="fa-solid fa-people-group"></i>Team</a></li>
+                    <li class="active"><a href="analytics.html"><i class="fa-solid fa-signal"></i>Analytics</a></li>
+                    <li><a href="tickets.html"><i class="fa-solid fa-ticket"></i>Tickets</a></li>
+                    <li><a href="customer.html"><i class="fa-solid fa-user"></i>Customers</a></li>
+                    <li><a href="hardware.html"><i class="fa-solid fa-server"></i>Hardware</a></li>
+                    <li><a href="team.html"><i class="fa-solid fa-people-group"></i>Team</a></li>
                     <li><a href="#"><i class="fa-solid fa-gear"></i>Settings</a></li>
-                    <li><a href="#"><i class="fa-solid fa-tag"></i>Tag Manager</a></li>
+                    <li><a href="tag-manager.html"><i class="fa-solid fa-tag"></i>Tag Manager</a></li>
                 </ul>
             </nav>
+            <div class="progress flex">
+                <img src="assets/images/startup-3025714-2526912.png" alt="" class="progress-img">
+                <h3>Tickets Resolved</h3>
+                <img src="assets/images/Rectangle 1305.png" alt="" class="progress-img-2">
+                <p>Going Strong!</p><span>90%</span>
+            </div>
             <div class="logout">
                 <a href=""><i class="fa-solid fa-up-right-from-square"></i>Logout</a>
             </div>
@@ -61,45 +67,365 @@
                         <button class="tablinks" onclick="ticketData(event, 'Tokyo')">Custom4 (26)</button> -->
                     </div>
                     <div class="search">
-                        <input type="search" name="searchcustomer" id="search" placeholder="Search by RMA, Issue or Status">
+                        <input type="search" name="searchcustomer" id="search"
+                            placeholder="Search by RMA, Issue or Status">
                         <i class="fa-solid fa-magnifying-glass"></i>
                     </div>
                 </div>
-                <div class="">
-                    <!-- Tab content -->
-                    <div id="all" class="tabcontent">
-                        <div class="info-back ">
-                            <div class="flex ">
-                                <h4>RMA</h4>
-                                <h4>Status</h4>
-                                <h4>Customer Email</h4>
-                                <h4>Hardware</h4>
-                                <h4>Updated at</h4>
-                                <h4>Actions</h4>
-                            </div>
-                            <div class="flex">
-                                <h4>0011754379...</h4>
-                                <h4>Awaiting arrival</h4>
-                                <h4>georgia.young@example.com</h4>
-                                <h4>Starlight-12 Poseidon</h4>
-                                <h4>15 May 2020 8:30 am</h4>
-                                <div class="edit-del">
+                <!-- Tab content -->
+                <div id="all" style="display: block;" class="tabcontent">
+                    <table class="w-full">
+                        <thead class="margin">
+                            <tr>
+                                <th>RMA</th>
+                                <th>Status</th>
+                                <th>Customer Email</th>
+                                <th>Hardware</th>
+                                <th>Updated at</th>
+                                <th>Actions</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>0011754379...</td>
+                                <td><span>In-queue</span></td>
+                                <td>georgia.young@example.com</td>
+                                <td>Starlight-12 Poseidon</td>
+                                <td>15 May 2020 8:30 am</td>
+                                <td>
                                     <i class="fa-regular fa-eye"></i>
                                     <i class="fa-regular fa-pen-to-square"></i>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>0011754379...</td>
+                                <td><span>Awaiting arrival</span></td>
+                                <td>georgia.young@example.com</td>
+                                <td>Starlight-12 Poseidon</td>
+                                <td>15 May 2020 8:30 am</td>
+                                <td>
+                                    <i class="fa-regular fa-eye"></i>
+                                    <i class="fa-regular fa-pen-to-square"></i>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>0011754379...</td>
+                                <td><span>Awaiting arrival</span></td>
+                                <td>georgia.young@example.com</td>
+                                <td>Starlight-12 Poseidon</td>
+                                <td>15 May 2020 8:30 am</td>
+                                <td>
+                                    <i class="fa-regular fa-eye"></i>
+                                    <i class="fa-regular fa-pen-to-square"></i>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>0011754379...</td>
+                                <td><span>Awaiting arrival</span></td>
+                                <td>georgia.young@example.com</td>
+                                <td>Starlight-12 Poseidon</td>
+                                <td>15 May 2020 8:30 am</td>
+                                <td>
+                                    <i class="fa-regular fa-eye"></i>
+                                    <i class="fa-regular fa-pen-to-square"></i>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>0011754379...</td>
+                                <td><span>Awaiting arrival</span></td>
+                                <td>georgia.young@example.com</td>
+                                <td>Starlight-12 Poseidon</td>
+                                <td>15 May 2020 8:30 am</td>
+                                <td>
+                                    <i class="fa-regular fa-eye"></i>
+                                    <i class="fa-regular fa-pen-to-square"></i>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>0011754379...</td>
+                                <td><span>Awaiting arrival</span></td>
+                                <td>georgia.young@example.com</td>
+                                <td>Starlight-12 Poseidon</td>
+                                <td>15 May 2020 8:30 am</td>
+                                <td>
+                                    <i class="fa-regular fa-eye"></i>
+                                    <i class="fa-regular fa-pen-to-square"></i>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>0011754379...</td>
+                                <td><span>Awaiting arrival</span></td>
+                                <td>georgia.young@example.com</td>
+                                <td>Starlight-12 Poseidon</td>
+                                <td>15 May 2020 8:30 am</td>
+                                <td>
+                                    <i class="fa-regular fa-eye"></i>
+                                    <i class="fa-regular fa-pen-to-square"></i>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>0011754379...</td>
+                                <td><span>Awaiting arrival</span></td>
+                                <td>georgia.young@example.com</td>
+                                <td>Starlight-12 Poseidon</td>
+                                <td>15 May 2020 8:30 am</td>
+                                <td>
+                                    <i class="fa-regular fa-eye"></i>
+                                    <i class="fa-regular fa-pen-to-square"></i>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>0011754379...</td>
+                                <td><span>Awaiting arrival</span></td>
+                                <td>georgia.young@example.com</td>
+                                <td>Starlight-12 Poseidon</td>
+                                <td>15 May 2020 8:30 am</td>
+                                <td>
+                                    <i class="fa-regular fa-eye"></i>
+                                    <i class="fa-regular fa-pen-to-square"></i>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div id="awaiting" class="tabcontent">
+                    <table class="w-full">
+                        <thead class="margin">
+                            <tr>
+                                <th>RMA</th>
+                                <th>Status</th>
+                                <th>Customer Email</th>
+                                <th>Hardware</th>
+                                <th>Updated at</th>
+                                <th>Actions</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>0011754379...</td>
+                                <td><span class="orange">Awaiting arrival</span></td>
+                                <td>georgia.young@example.com</td>
+                                <td>Starlight-12 Poseidon</td>
+                                <td>15 May 2020 8:30 am</td>
+                                <td>
+                                    <i class="fa-regular fa-eye"></i>
+                                    <i class="fa-regular fa-pen-to-square"></i>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>0011754379...</td>
+                                <td><span class="orange">Awaiting arrival</span></td>
+                                <td>georgia.young@example.com</td>
+                                <td>Starlight-12 Poseidon</td>
+                                <td>15 May 2020 8:30 am</td>
+                                <td>
+                                    <i class="fa-regular fa-eye"></i>
+                                    <i class="fa-regular fa-pen-to-square"></i>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>0011754379...</td>
+                                <td><span class="orange">Awaiting arrival</span></td>
+                                <td>georgia.young@example.com</td>
+                                <td>Starlight-12 Poseidon</td>
+                                <td>15 May 2020 8:30 am</td>
+                                <td>
+                                    <i class="fa-regular fa-eye"></i>
+                                    <i class="fa-regular fa-pen-to-square"></i>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>0011754379...</td>
+                                <td><span class="orange">Awaiting arrival</span></td>
+                                <td>georgia.young@example.com</td>
+                                <td>Starlight-12 Poseidon</td>
+                                <td>15 May 2020 8:30 am</td>
+                                <td>
+                                    <i class="fa-regular fa-eye"></i>
+                                    <i class="fa-regular fa-pen-to-square"></i>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>0011754379...</td>
+                                <td><span class="orange">Awaiting arrival</span></td>
+                                <td>georgia.young@example.com</td>
+                                <td>Starlight-12 Poseidon</td>
+                                <td>15 May 2020 8:30 am</td>
+                                <td>
+                                    <i class="fa-regular fa-eye"></i>
+                                    <i class="fa-regular fa-pen-to-square"></i>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>0011754379...</td>
+                                <td><span class="orange">Awaiting arrival</span></td>
+                                <td>georgia.young@example.com</td>
+                                <td>Starlight-12 Poseidon</td>
+                                <td>15 May 2020 8:30 am</td>
+                                <td>
+                                    <i class="fa-regular fa-eye"></i>
+                                    <i class="fa-regular fa-pen-to-square"></i>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>0011754379...</td>
+                                <td><span class="orange">Awaiting arrival</span></td>
+                                <td>georgia.young@example.com</td>
+                                <td>Starlight-12 Poseidon</td>
+                                <td>15 May 2020 8:30 am</td>
+                                <td>
+                                    <i class="fa-regular fa-eye"></i>
+                                    <i class="fa-regular fa-pen-to-square"></i>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>0011754379...</td>
+                                <td><span class="orange">Awaiting arrival</span></td>
+                                <td>georgia.young@example.com</td>
+                                <td>Starlight-12 Poseidon</td>
+                                <td>15 May 2020 8:30 am</td>
+                                <td>
+                                    <i class="fa-regular fa-eye"></i>
+                                    <i class="fa-regular fa-pen-to-square"></i>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>0011754379...</td>
+                                <td><span class="orange">Awaiting arrival</span></td>
+                                <td>georgia.young@example.com</td>
+                                <td>Starlight-12 Poseidon</td>
+                                <td>15 May 2020 8:30 am</td>
+                                <td>
+                                    <i class="fa-regular fa-eye"></i>
+                                    <i class="fa-regular fa-pen-to-square"></i>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div id="queue" class="tabcontent">
+                    <table class="w-full">
+                        <thead class="margin">
+                            <tr>
+                                <th>RMA</th>
+                                <th>Status</th>
+                                <th>Customer Email</th>
+                                <th>Hardware</th>
+                                <th>Updated at</th>
+                                <th>Actions</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>0011754379...</td>
+                                <td><span class="blue">Awaiting arrival</span></td>
+                                <td>georgia.young@example.com</td>
+                                <td>Starlight-12 Poseidon</td>
+                                <td>15 May 2020 8:30 am</td>
+                                <td>
+                                    <i class="fa-regular fa-eye"></i>
+                                    <i class="fa-regular fa-pen-to-square"></i>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>0011754379...</td>
+                                <td><span class="blue">Awaiting arrival</span></td>
+                                <td>georgia.young@example.com</td>
+                                <td>Starlight-12 Poseidon</td>
+                                <td>15 May 2020 8:30 am</td>
+                                <td>
+                                    <i class="fa-regular fa-eye"></i>
+                                    <i class="fa-regular fa-pen-to-square"></i>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>0011754379...</td>
+                                <td><span class="blue">Awaiting arrival</span></td>
+                                <td>georgia.young@example.com</td>
+                                <td>Starlight-12 Poseidon</td>
+                                <td>15 May 2020 8:30 am</td>
+                                <td>
+                                    <i class="fa-regular fa-eye"></i>
+                                    <i class="fa-regular fa-pen-to-square"></i>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>0011754379...</td>
+                                <td><span class="blue">Awaiting arrival</span></td>
+                                <td>georgia.young@example.com</td>
+                                <td>Starlight-12 Poseidon</td>
+                                <td>15 May 2020 8:30 am</td>
+                                <td>
+                                    <i class="fa-regular fa-eye"></i>
+                                    <i class="fa-regular fa-pen-to-square"></i>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>0011754379...</td>
+                                <td><span class="blue">Awaiting arrival</span></td>
+                                <td>georgia.young@example.com</td>
+                                <td>Starlight-12 Poseidon</td>
+                                <td>15 May 2020 8:30 am</td>
+                                <td>
+                                    <i class="fa-regular fa-eye"></i>
+                                    <i class="fa-regular fa-pen-to-square"></i>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>0011754379...</td>
+                                <td><span class="blue">Awaiting arrival</span></td>
+                                <td>georgia.young@example.com</td>
+                                <td>Starlight-12 Poseidon</td>
+                                <td>15 May 2020 8:30 am</td>
+                                <td>
+                                    <i class="fa-regular fa-eye"></i>
+                                    <i class="fa-regular fa-pen-to-square"></i>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>0011754379...</td>
+                                <td><span class="blue">Awaiting arrival</span></td>
+                                <td>georgia.young@example.com</td>
+                                <td>Starlight-12 Poseidon</td>
+                                <td>15 May 2020 8:30 am</td>
+                                <td>
+                                    <i class="fa-regular fa-eye"></i>
+                                    <i class="fa-regular fa-pen-to-square"></i>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>0011754379...</td>
+                                <td><span class="blue">Awaiting arrival</span></td>
+                                <td>georgia.young@example.com</td>
+                                <td>Starlight-12 Poseidon</td>
+                                <td>15 May 2020 8:30 am</td>
+                                <td>
+                                    <i class="fa-regular fa-eye"></i>
+                                    <i class="fa-regular fa-pen-to-square"></i>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>0011754379...</td>
+                                <td><span class="blue">Awaiting arrival</span></td>
+                                <td>georgia.young@example.com</td>
+                                <td>Starlight-12 Poseidon</td>
+                                <td>15 May 2020 8:30 am</td>
+                                <td>
+                                    <i class="fa-regular fa-eye"></i>
+                                    <i class="fa-regular fa-pen-to-square"></i>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
 
-                    <div id="awaiting" class="tabcontent">
-                        <h3>Paris</h3>
-                        <p>Paris is the capital of France.</p>
-                    </div>
-
-                    <div id="queue" class="tabcontent">
-                        <h3>Tokyo</h3>
-                        <p>Tokyo is the capital of Japan.</p>
-                    </div>
+                <div class="flex pagination">
+                    <p> Previous</p>
+                    <p class="active"> 1</p>
+                    <p> 2</p>
+                    <p> 3</p>
+                    <p> 4</p>
+                    <p> Next</p>
                 </div>
 
             </div>

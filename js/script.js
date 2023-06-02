@@ -44,3 +44,12 @@ function ticketData(evt, ticketData) {
     document.getElementById(ticketData).style.display = "block";
     evt.currentTarget.className += " active";
   }
+
+
+
+// parent hover 
+
+
+$('nav-ul').hover(function(){
+  $(this).children('hoverli').css("fill","white");
+});
