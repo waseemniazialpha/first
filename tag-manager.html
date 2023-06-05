@@ -140,7 +140,7 @@
                                 </defs>
                             </svg>
                             Team</a></li>
-                    <li><a class="hover-a" href="tag-manager.html"><svg width="16" height="16" viewBox="0 0 16 16" fill="none"
+                    <li><a class="hover-a" href="setting.html"><svg width="16" height="16" viewBox="0 0 16 16" fill="none"
                                 xmlns="http://www.w3.org/2000/svg">
                                 <g clip-path="url(#clip0_30_3218)">
                                     <path
@@ -185,7 +185,7 @@
                 <p>Going Strong!</p><span>90%</span>
             </div>
             <div class="logout">
-                <a href=""><i class="fa-solid fa-up-right-from-square"></i>Logout</a>
+                <a href="login.html"><i class="fa-solid fa-up-right-from-square"></i>Logout</a>
             </div>
         </div>
         <!-- sidebar ---- end  -->
@@ -196,12 +196,12 @@
 
                 </div>
                 <div class="create-ticket">
-                    <button id="myBtn"><i class="fa-solid fa-circle-plus"></i>Create Ticket</button>
+                    <button id="myBtn" onclick="myFunction()"><i class="fa-solid fa-circle-plus"></i>Create Ticket</button>
                 </div>
             </div>
             <div class="max-w-con ">
                 <div class="flex justify-space">
-                    <button class="hardware-btn">Add Tags</button>
+                    <button class="hardware-btn" onclick="addTagFunction()">Add Tags</button>
                     <div class="search">
                         <input type="search" name="searchcustomer" id="search"
                             placeholder="Search by RMA, Issue or Status">
@@ -339,6 +339,119 @@
 
             </div>
 
+        </div>
+        <div id="myModalBlur" class="modal-back-blur " onclick="blurFunction()"></div>
+        <!-- Modal content -->
+        <div id="myModal" class="modal-content position-a">
+            <span class="close" onclick="hideFunction()">&times;</span>
+            <h2 style="text-align: center; margin: 20px 0;">Create Ticket</h2>
+            <div class="flex gapitem border">
+                <div class="col-5 flex gapitem">
+                    <h4>1</h4>
+                    <p>Customer</p>
+                </div>
+                <div class="col-5 flex gapitem">
+                    <img src="assets/images/connector.png" alt="">
+                </div>
+                <div class="col-5 flex gapitem">
+                    <h4>2</h4>
+                    <p>Repair Ticket</p>
+                </div>
+                <div class="col-5 flex gapitem">
+                    <img src="assets/images/connector.png" alt="">
+                </div>
+                <div class="col-5 flex gapitem">
+                    <h4>3</h4>
+                    <p>Ticket Issued</p>
+                </div>
+            </div>
+            <div class="customer-title">
+                <h2>Customer Info</h2>
+                <p>Complete information related to the customer is required.</p>
+            </div>
+            <form action="">
+                <div class="flex w-full gapitem">
+                    <div class="input w-full">
+                        <label for="fname">Customer Email <span style="color: red;">*</span></label>
+                        <input type="text" id="cEmail" name="customeremail" placeholder="johndoe@email.com">
+                    </div>
+                    <div class="input w-full">
+                        <label for="lname">Order Number <span style="color: red;">*</span></label>
+                        <input type="text" id="orderno" name="lastname" placeholder="22658475985">
+                    </div>
+                </div>
+                <div class="flex w-full gapitem">
+                    <div class="input w-full">
+                        <label for="fname">First Name <span style="color: red;">*</span></label>
+                        <input type="text" id="fname" firstname="customeremail" placeholder="John ">
+                    </div>
+                    <div class="input w-full">
+                        <label for="lname">Last Name<span style="color: red;">*</span></label>
+                        <input type="text" id="lname" name="lastname" placeholder="Doe">
+                    </div>
+                </div>
+                <div class="flex w-full gapitem">
+                    <div class="input w-full">
+                        <label for="fname">Customer Address <span style="color: red;">*</span></label>
+                        <input type="text" id="cAddres" caddres="Customeraddres" placeholder="AlphaSquad">
+                    </div>
+                </div>
+                <div class="flex w-full gapitem">
+                    <div class="input w-full">
+                        <label for="fname">Country <span style="color: red;">*</span></label>
+                        <input type="text" id="country" country="country" placeholder="Country ">
+                    </div>
+                    <div class="input w-full">
+                        <label for="lname">State<span style="color: red;">*</span></label>
+                        <input type="text" id="state" name="state" placeholder="State">
+                    </div>
+                </div>
+                <div class="flex w-full gapitem">
+                    <div class="input w-full">
+                        <label for="fname">City <span style="color: red;">*</span></label>
+                        <input type="text" id="city" city="city" placeholder="City ">
+                    </div>
+                    <div class="input w-full">
+                        <label for="lname">ZipCode<span style="color: red;">*</span></label>
+                        <input type="text" id="ZipCode" zipcode="Zipcode" placeholder="95050">
+                    </div>
+                </div>
+                <div class="flex w-full gapitem">
+                    <div class="input w-full">
+                        <label for="lname">Phone Number (optional)<span style="color: red;">*</span></label>
+                        <input type="text" id="phoneNumber" zipcode="phonenumber"
+                            placeholder="+1 20 6451 2559">
+                    </div>
+                </div>
+
+            </form>
+            <div class="flex justify-space">
+                <label><span style="color: red;">*</span>fields are required</label>
+                <button class="btn-next">Next &nbsp;></button>
+            </div>
+        </div>
+
+
+        <div id="tagBlur" class="tag-blur " onclick="tagBlurFunction()"></div>
+        <div id="tagModal" class="tag-content">
+            <p class="close2" onclick="tagHideFunction()">&times;</p>
+            <h2>Add Member</h2>
+            <form action="" class="add-tag-form">
+                <div class="w-full ">
+                        <label for="tagtitle">Tag Title </label>
+                        <input type="text" id="tag" firstname="tags" placeholder="Mouse ">
+                    </div>
+                <div class="w-full">
+                        <button>Add Tag</button>
+
+                    </div>
+                    <div class=" w-full">
+                        <button>Cancel</button>
+                    </div>
+                </div>
+
+            </form>
+           
         </div>
     </div>
 

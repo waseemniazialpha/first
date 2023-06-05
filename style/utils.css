@@ -36,6 +36,7 @@ li{
 }
 a{
     text-decoration: none;
+    color: #7a7a7a;;
 }
 .margin{
     margin: 20px 0;
@@ -45,4 +46,7 @@ a{
 }
 .position-r{
     position: relative;
+}
+.position-a{
+    position: absolute;
 }

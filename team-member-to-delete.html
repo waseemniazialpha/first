@@ -13,18 +13,18 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
         integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <title>Analytics</title>
+    <title>Team</title>
 </head>
 
 <body>
-    <div class="container w-full flex position-r">
+    <div class="container w-full flex ">
         <div class="sidebar">
             <div class="logo">
                 <img src="assets/images/finalMouseLogo.png" alt="">
             </div>
             <nav>
                 <ul class="nav-ul">
-                    <li ><a class="active " href="analytics.html">
+                    <li class="active "><a class="hover-a" href="analytics.html">
                             <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
                                 xmlns="http://www.w3.org/2000/svg">
                                 <g clip-path="url(#clip0_1_4002)">
@@ -179,6 +179,12 @@
                 </ul>
             </nav>
             
+            <div class="progress flex">
+                <img src="assets/images/startup-3025714-2526912.png" alt="" class="progress-img">
+                <h3>Tickets Resolved</h3>
+                <img src="assets/images/Rectangle 1305.png" alt="" class="progress-img-2">
+                <p>Going Strong!</p><span>90%</span>
+            </div>
             <div class="logout">
                 <a href="login.html"><i class="fa-solid fa-up-right-from-square"></i>Logout</a>
             </div>
@@ -187,229 +193,171 @@
         <div class="right-area w-full">
             <div class="right-container  flex justify-space">
                 <div class="title">
-                    <h2>Analytics</h2>
+                    <h2>Team</h2>
 
                 </div>
                 <div class="create-ticket">
-                    <button id="myBtn" onclick="myFunction()"><i class="fa-solid fa-circle-plus"></i>Create Ticket</button>
+                    <button id="myBtn"><i class="fa-solid fa-circle-plus"></i>Create Ticket</button>
                 </div>
             </div>
             <div class="max-w-con ">
-                <div class="row flex justify-around gapitem">
-                    <div class="col-4 flex">
-                        <div class="total">
-                            <i class="fa-solid fa-ticket"></i>
-                        </div>
-                        <div class="total">
-                            <h3 style="color: brown;">10</h3>
-                            <p>Tickets</p>
-                        </div>
+                <div class="flex justify-space" >
+                    <div class="btns">
+                        <button class="hardware-btn">Add Member</button>
+                        <button id="delBtn" class="del-btn" onclick="delFunction()">Delete Member</button>
+                        <button class="cancel-btn">Cancel</button>
                     </div>
-                    <div class="col-4 flex">
-                        <div class="total">
-                            <i class="fa-solid fa-user"></i>
-                        </div>
-                        <div class="total">
-                            <h3 style="color: brown;">10</h3>
-                            <p>Customers</p>
-                        </div>
-                    </div>
-                    <div class="col-4 flex">
-                        <div class="total">
-                            <i class="fa-solid fa-server"></i>
-                        </div>
-                        <div class="total">
-                            <h3>10</h3>
-                            <p>Hardware</p>
-                        </div>
-                    </div>
-                    <div class="col-4 flex">
-                        <div class="total">
-                            <i class="fa-solid fa-people-group"></i>
-                        </div>
-                        <div class="total">
-                            <h3>10</h3>
-                            <p>Member</p>
-                        </div>
+                    <div class="search">
+                        <input type="search" name="searchcustomer" id="search"
+                            placeholder="Search by RMA, Issue or Status">
+                        <i class="fa-solid fa-magnifying-glass"></i>
                     </div>
                 </div>
-                <div class="row flex">
-                    <h2 class="ticket-stats">Ticket Stats:</h2>
-                    <img src="assets/images/Line 31.png" alt="" style="width: 85%; margin-right: 20px;">
+                <!-- Tab content -->
+                <div id="" class="">
+                    <table class="w-full">
+                        <thead class="margin">
+                            <tr>
+                                <th><input type="checkbox"></th>
+                                <th>First name</th>
+                                <th>Last name</th>
+                                <th>Email</th>
+                                <th>Role</th>
+                                <th>Date created</th>
+                                <th>Actions</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><input type="checkbox"></td>
+                                <td>Eduardo</td>
+                                <td>Lane</td>
+                                <td>deanna.curtis@example.com</td>
+                                <td class="tech">Technician</td>
+                                <td>Oct 12, 2022</td>
+                                <td>
+                                    <i class="fa-regular fa-pen-to-square"></i>
+                                    <i class="fa-regular fa-trash-can"></i>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><input type="checkbox"></td>
+                                <td>Eduardo</td>
+                                <td>Lane</td>
+                                <td>deanna.curtis@example.com</td>
+                                <td class="admin">Admin</td>
+                                <td>Oct 12, 2022</td>
+                                <td>
+                                    <i class="fa-regular fa-pen-to-square"></i>
+                                    <i class="fa-regular fa-trash-can"></i>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><input type="checkbox"></td>
+                                <td>Eduardo</td>
+                                <td>Lane</td>
+                                <td>deanna.curtis@example.com</td>
+                                <td class="tech">Technician</td>
+                                <td>Oct 12, 2022</td>
+                                <td>
+                                    <i class="fa-regular fa-pen-to-square"></i>
+                                    <i class="fa-regular fa-trash-can"></i>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><input type="checkbox"></td>
+                                <td>Eduardo</td>
+                                <td>Lane</td>
+                                <td>deanna.curtis@example.com</td>
+                                <td class="admin">Admin</td>
+                                <td>Oct 12, 2022</td>
+                                <td>
+                                    <i class="fa-regular fa-pen-to-square"></i>
+                                    <i class="fa-regular fa-trash-can"></i>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><input type="checkbox"></td>
+                                <td>Eduardo</td>
+                                <td>Lane</td>
+                                <td>deanna.curtis@example.com</td>
+                                <td class="tech">Technician</td>
+                                <td>Oct 12, 2022</td>
+                                <td>
+                                    <i class="fa-regular fa-pen-to-square"></i>
+                                    <i class="fa-regular fa-trash-can"></i>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><input type="checkbox"></td>
+                                <td>Eduardo</td>
+                                <td>Lane</td>
+                                <td>deanna.curtis@example.com</td>
+                                <td class="admin">Admin</td>
+                                <td>Oct 12, 2022</td>
+                                <td>
+                                    <i class="fa-regular fa-pen-to-square"></i>
+                                    <i class="fa-regular fa-trash-can"></i>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><input type="checkbox"></td>
+                                <td>Eduardo</td>
+                                <td>Lane</td>
+                                <td>deanna.curtis@example.com</td>
+                                <td class="tech">Technician</td>
+                                <td>Oct 12, 2022</td>
+                                <td>
+                                    <i class="fa-regular fa-pen-to-square"></i>
+                                    <i class="fa-regular fa-trash-can"></i>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><input type="checkbox"></td>
+                                <td>Eduardo</td>
+                                <td>Lane</td>
+                                <td>deanna.curtis@example.com</td>
+                                <td class="admin">Admin</td>
+                                <td>Oct 12, 2022</td>
+                                <td>
+                                    <i class="fa-regular fa-pen-to-square"></i>
+                                    <i class="fa-regular fa-trash-can"></i>
+                                </td>
+                            </tr>
+                           
+                        </tbody>
+                    </table>
+                </div>
+               
+                <div class="flex pagination">
+                    <p> Previous</p>
+                    <p class="active"> 1</p>
+                    <p> 2</p>
+                    <p> 3</p>
+                    <p> 4</p>
+                    <p> Next</p>
                 </div>
 
-                <div class="flex gapitem align-items">
-                    <div class="col-3">
-                        <h2>Summary</h2>
-                        <div class="stats flex justify-space">
-                            <p>Awaiting Unit Arrival</p>
-                            <h4>06</h4>
-                        </div>
-                        <div class="stats flex justify-space">
-                            <p>In-queue</p>
-                            <h4>12</h4>
-                        </div>
-                        <div class="stats flex justify-space">
-                            <p>In-progress</p>
-                            <h4>02</h4>
-                        </div>
-                        <div class="stats flex justify-space">
-                            <p>Resolved</p>
-                            <h4>24</h4>
-                        </div>
-                    </div>
-                    <div class="col-3">
-                        <div class="flex flex-column align-items over">
-                            <h2>Overview</h2>
-                            <p>Total Tickets</p>
-                            <p>24 <span>/40</span></p>
-                            <img src="assets/images/Group 811715.png" alt="">
-                        </div>
-                    </div>
-                    <div class="col-3">
-                        <h2 class="mail-heading">Latest Tickets</h2>
-                        <div class="mail flex justify-space">
-                            <p><span style="font-weight: bold;">1.</span> alma.lawson@example.com</p>
-                            <i class="fa-solid fa-up-right-from-square"></i>
-                        </div>
-                        <div class="mail flex justify-space">
-                            <p><span style="font-weight: bold;">2.</span> alma.lawson@example.com</p>
-                            <i class="fa-solid fa-up-right-from-square"></i>
-                        </div>
-                        <div class="mail flex justify-space">
-                            <p><span style="font-weight: bold;">3.</span> alma.lawson@example.com</p>
-                            <i class="fa-solid fa-up-right-from-square"></i>
-                        </div>
-                        <div class="mail flex justify-space">
-                            <p><span style="font-weight: bold;">4.</span> alma.lawson@example.com</p>
-                            <i class="fa-solid fa-up-right-from-square"></i>
-                        </div>
-                        <div class="mail">
-                            <button>View All</button>
-                        </div>
-                    </div>
-                </div>
-                <div class="row flex">
-                    <h2 class="ticket-stats">Tag Stats:</h2>
-                    <img src="assets/images/Line 31.png" alt="" style="width: 85%; margin-right: 20px;">
-                </div>
-                <div class="flex gapitem align-items">
-                    <div class="col-3">
-                        <h2>Customer Issues</h2>
-                        <p>Total issues: 6</p>
-                        <img src="assets/images/Frame 427318664.png" alt="" style="margin-top: 20px;">
-                    </div>
-                    <div class="col-3">
-                        <h2>Overview</h2>
-                        <div class="overview-tag tag-border">
-                            <p>Total Tags</p>
-                            <h3>06</h3>
-                        </div>
-                        <div class="overview-tag">
-                            <p>Total Customer Issues</p>
-                            <h3>16</h3>
-                        </div>
-                    </div>
-                    <div class="col-3">
-                        <h2>Customer Issues</h2>
-                        <p>Total issues: 6</p>
-                        <img src="assets/images/Group 811717.png" alt="">
-                    </div>
-                </div>
             </div>
 
         </div>
-            <div id="myModalBlur" class="modal-back-blur " onclick="blurFunction()"></div>
-                    <!-- Modal content -->
-                    <div id="myModal" class="modal-content position-a">
-                        <span class="close" onclick="hideFunction()">&times;</span>
-                        <h2 style="text-align: center; margin: 20px 0;">Create Ticket</h2>
-                        <div class="flex gapitem border">
-                            <div class="col-5 flex gapitem">
-                                <h4>1</h4>
-                                <p>Customer</p>
-                            </div>
-                            <div class="col-5 flex gapitem">
-                                <img src="assets/images/connector.png" alt="">
-                            </div>
-                            <div class="col-5 flex gapitem">
-                                <h4>2</h4>
-                                <p>Repair Ticket</p>
-                            </div>
-                            <div class="col-5 flex gapitem">
-                                <img src="assets/images/connector.png" alt="">
-                            </div>
-                            <div class="col-5 flex gapitem">
-                                <h4>3</h4>
-                                <p>Ticket Issued</p>
-                            </div>
-                        </div>
-                        <div class="customer-title">
-                            <h2>Customer Info</h2>
-                            <p>Complete information related to the customer is required.</p>
-                        </div>
-                        <form action="">
-                            <div class="flex w-full gapitem">
-                                <div class="input w-full">
-                                    <label for="fname">Customer Email <span style="color: red;">*</span></label>
-                                    <input type="text" id="cEmail" name="customeremail" placeholder="johndoe@email.com">
-                                </div>
-                                <div class="input w-full">
-                                    <label for="lname">Order Number <span style="color: red;">*</span></label>
-                                    <input type="text" id="orderno" name="lastname" placeholder="22658475985">
-                                </div>
-                            </div>
-                            <div class="flex w-full gapitem">
-                                <div class="input w-full">
-                                    <label for="fname">First Name <span style="color: red;">*</span></label>
-                                    <input type="text" id="fname" firstname="customeremail" placeholder="John ">
-                                </div>
-                                <div class="input w-full">
-                                    <label for="lname">Last Name<span style="color: red;">*</span></label>
-                                    <input type="text" id="lname" name="lastname" placeholder="Doe">
-                                </div>
-                            </div>
-                            <div class="flex w-full gapitem">
-                                <div class="input w-full">
-                                    <label for="fname">Customer Address <span style="color: red;">*</span></label>
-                                    <input type="text" id="cAddres" caddres="Customeraddres" placeholder="AlphaSquad">
-                                </div>
-                            </div>
-                            <div class="flex w-full gapitem">
-                                <div class="input w-full">
-                                    <label for="fname">Country <span style="color: red;">*</span></label>
-                                    <input type="text" id="country" country="country" placeholder="Country ">
-                                </div>
-                                <div class="input w-full">
-                                    <label for="lname">State<span style="color: red;">*</span></label>
-                                    <input type="text" id="state" name="state" placeholder="State">
-                                </div>
-                            </div>
-                            <div class="flex w-full gapitem">
-                                <div class="input w-full">
-                                    <label for="fname">City <span style="color: red;">*</span></label>
-                                    <input type="text" id="city" city="city" placeholder="City ">
-                                </div>
-                                <div class="input w-full">
-                                    <label for="lname">ZipCode<span style="color: red;">*</span></label>
-                                    <input type="text" id="ZipCode" zipcode="Zipcode" placeholder="95050">
-                                </div>
-                            </div>
-                            <div class="flex w-full gapitem">
-                                <div class="input w-full">
-                                    <label for="lname">Phone Number (optional)<span style="color: red;">*</span></label>
-                                    <input type="text" id="phoneNumber" zipcode="phonenumber"
-                                        placeholder="+1 20 6451 2559">
-                                </div>
-                            </div>
 
-                        </form>
-                        <div class="flex justify-space">
-                            <label><span style="color: red;">*</span>fields are required</label>
-                            <button class="btn-next">Next &nbsp;></button>
-                        </div>
+        <div id="modalBlur" class="modal-blur "></div>
+            <!-- Modal content -->
+            <div id="delModal" class="del-modal-content ">
+                <p class="close2" onclick="closeFunction()">&times;</p>
+                <div class="content">
+                    <img src="assets/svg/del.svg" alt="">
+                    <p>Deleteing team member(s)? </p>
+                    <p>You are about to delete member(s) from the team. This action is irreversible and can’t be undone. Do you wish to proceed?</p>
+                    <div class="btnss flex w-full">
+                        <button class="cancel-btn-2" onclick="cancelDelFunction()">Cancel</button>
+                        <button id="delBtn-2" class="del-btn-2" onclick="cDelFunction()"><a href="team.html" style="color: #ffff;">Delete Member</a></button>
                     </div>
-                
+                </div>
+               
+            </div>
+        
 
     </div>
 

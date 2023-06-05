@@ -14,6 +14,7 @@ body {
 .col-2 {
     flex-basis: 50%;
     height: 100vh;
+    overflow: hidden;
 }
 
 .right {
@@ -139,7 +140,6 @@ form input {
 
 nav {
     margin-top: 20px;
-    width: 100% !important;
 }
 
 nav ul {
@@ -150,41 +150,47 @@ nav ul {
 }
 
 nav ul li {
-    padding: 5px 20px;
-    margin: 0 10px;
+    padding: 5px 0px;
+    /* margin: 0 10px; */
     margin-top: 2rem;
-    transition: all 0.5s;
-    /* width: 100% !important; */
-    cursor: pointer;
-    transition: all 0.5s;
-    border-radius: 5px;
+    width: 220px;
 
 }
-
-nav ul li a {
-    color: #A1A1AA;
-    transition: all 0.5s;
-
-}
-nav ul li:hover{
+nav ul li .active{
     background-color: #3F3F46;
     color: #ffffff;
 }
-nav ul li:hover .hover-a{
-    color: #ffffff;
+nav ul li .active svg{
+    fill: #ffffff;
 }
-nav ul li a:hover {
+
+nav ul li a {
+    cursor: pointer;
+    transition: all 0.5s;
+    border-radius: 5px;
+    padding: 5px 10px;
     color: #A1A1AA;
+    display: block;
+    transition: all 0.5s;
+
+}
+nav ul li a:hover{
+    background-color: #3F3F46;
     transition: all 0.5s;
     border-radius: 5px;
     color: #ffffff;
 }
+
 
 .fa-solid {
     margin-right: 2rem;
 }
 
- nav ul li:hover svg{ 
+ nav ul li svg{ 
+    transition: all 0.5s;
+   
+  }
+ nav ul li a:hover svg{ 
     fill: #ffffff;/* this works */
    
   }
@@ -351,13 +357,11 @@ nav ul li a:hover {
 
 
 /* The Modal (background) */
-.modal {
+.modal-back-blur {
     display: none; /* Hidden by default */
-    position: fixed; /* Stay in place */
+    position: absolute; /* Stay in place */
     z-index: 1;
     margin: auto;
-    left: 0;
-    top: 0;
     width: 100%;
     height: 100%;
     overflow: auto;
@@ -372,13 +376,16 @@ nav ul li a:hover {
 
 /* Modal Content */
 .modal-content {
+    display: none;
     background-color: #fefefe;
     padding: 20px;
     z-index: 99;
+    width: 100%;
     border: 1px solid #888;
     max-width: 760px;
     line-height: 1.6;
     margin: 1% auto;
+    inset: 0;
     border-radius: 10px;
 }
 .customer-title{
@@ -460,6 +467,7 @@ form label ,label{
     padding: 14px 16px;
     font-size: 12px;
     transition: border 0.2s;
+    border-bottom: 4px solid transparent;
   }
   
   /* Change background color of buttons on hover */
@@ -565,6 +573,36 @@ form label ,label{
     cursor: pointer;
     transition: all 0.5s;
   }
+  .del-btn{
+    padding: 10px 20px;
+    background: transparent;
+    color: #E11D48;
+    border-radius: 5px;
+    font-size: 14px;
+    border: 0.3px solid #E11D48;
+    cursor: pointer;
+    transition: all 0.5s;
+  }
+  .del-btn:hover{
+    padding: 10px 20px;
+    background: #E11D48;
+    color: #ffffff;
+    border-radius: 5px;
+    font-size: 14px;
+    border: 0.3px solid #E11D48;
+    cursor: pointer;
+    transition: all 0.5s;
+  }
+  .cancel-btn{
+    padding: 10px 20px;
+    background: transparent;
+    color: #000;
+    border: none;
+    border-radius: 5px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: all 0.5s;
+  }
   .tech{
     color: purple;
   }
@@ -601,3 +639,198 @@ form label ,label{
 svg:hover path {
     fill: #ebebeb
 }
+.modal-blur {
+    position: absolute;
+    width: 100%;
+    display: none;
+    height: 100%;
+    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.6);
+
+}
+#delModal{
+    display: none;
+   
+}
+
+/* Modal Content */
+.del-modal-content {
+    position: absolute;
+    background-color: #fefefe;
+    padding: 20px;
+    z-index: 99;
+    border: 1px solid #888;
+    /* max-width: 400px; */
+    line-height: 1.6;
+    margin: auto;
+    inset: 0;
+    width: 450px;
+    height: 250px;
+    border-radius: 10px;
+}
+.close2 {
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close2:hover,
+.close2:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+.content{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 20px;
+    font-size: 14px;
+    color: #888;
+}
+.content img{
+    width: 40px;
+    height: 40px;
+}
+.btnss{
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+.cancel-btn-2{
+    padding: 10px 20px;
+    background: transparent;
+    color: #000;
+    border: 1px solid #000;
+    border-radius: 5px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: all 0.5s;
+}
+
+
+.del-btn-2{
+    padding: 10px 20px;
+    background: #E11D48;
+    color: #ffffff;
+    border-radius: 5px;
+    font-size: 14px;
+    border: 0.3px solid #E11D48;
+    cursor: pointer;
+    transition: all 0.5s;
+  }
+  .del-btn-2:hover{
+    background: transparent;
+    color: #E11D48;
+  }
+  .cancel-btn{
+    padding: 10px 20px;
+    background: transparent;
+    color: #000;
+    border: none;
+    border-radius: 5px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: all 0.5s;
+  }
+
+  .member .fa-trash-can:hover{
+    color: #E11D48;
+  }
+  .add-member-blur{
+    position: absolute; /* Stay in place */
+    z-index: 1;
+    display: none;
+    margin: auto;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.6);
+
+    /* Black w/ opacity */
+}
+#memberModal{
+    display: none;
+}
+  .add-member-content{
+    background-color: #ffffff;
+    position: absolute;
+    right: 0px;
+    width: 400px;
+    z-index: 99;
+    height: 100vh;
+    padding: 20px;
+    
+  }
+  /* .add-member-content h2{
+    padding: 20px;
+  } */
+  .add-mem-form{
+    border: none;
+
+  }
+  .add-mem-form select{
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: 1px solid #c8c8ca;
+  }
+  .add-mem-form button{
+    width: 100%;
+    padding: 10px 0;
+    border: 1px solid #000;
+    border-radius: 5px;
+    margin-bottom: 10px;
+  }
+  .add-mem-form button:hover{
+    background-color: #000;
+    color: #ffffff;
+  }
+  .tag-blur{
+    position: absolute; /* Stay in place */
+    z-index: 1;
+    display: none;
+    margin: auto;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.6);
+
+    /* Black w/ opacity */
+}
+#tagModal{
+    display: none;
+}
+  .tag-content{
+    background-color: #ffffff;
+    position: absolute;
+    right: 0px;
+    width: 400px;
+    z-index: 99;
+    height: 100vh;
+    padding: 20px;
+    
+  }
+  /* .add-member-content h2{
+    padding: 20px;
+  } */
+  .add-tag-form{
+    border: none;
+
+  }
+
+  .add-tag-form button{
+    width: 100%;
+    padding: 10px 0;
+    border: 1px solid #000;
+    border-radius: 5px;
+    margin-bottom: 10px;
+  }
+  .add-tag-form button:hover{
+    background-color: #000;
+    color: #ffffff;
+  }
