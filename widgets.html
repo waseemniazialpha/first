@@ -13,7 +13,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
         integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <title>Tag Manager</title>
+    <title>Widgets</title>
 </head>
 
 <body>
@@ -187,6 +187,7 @@
                                     Widgets</a></li>
                 </ul>
             </nav>
+            
             <div class="progress flex">
                 <img src="assets/images/startup-3025714-2526912.png" alt="" class="progress-img">
                 <h3>Tickets Resolved</h3>
@@ -201,7 +202,7 @@
         <div class="right-area w-full">
             <div class="right-container  flex justify-space">
                 <div class="title">
-                    <h2>Tag Manager</h2>
+                    <h2>Widgets</h2>
 
                 </div>
                 <div class="create-ticket">
@@ -209,8 +210,7 @@
                 </div>
             </div>
             <div class="max-w-con ">
-                <div class="flex justify-space">
-                    <button class="hardware-btn" onclick="addTagFunction()">Add Tags</button>
+                <div class="flex" style="justify-content: flex-end;">
                     <div class="search">
                         <input type="search" name="searchcustomer" id="search"
                             placeholder="Search by RMA, Issue or Status">
@@ -218,138 +218,102 @@
                     </div>
                 </div>
                 <!-- Tab content -->
-                <div id="" class="flex gapitem">
-                    <div class="tags" style="max-width: 260px;">
-                        <h3>All tags</h3>
-                        <div class="tag-item flex">
-                            <p class="active">Mouse</p>
-                            <p>Keyboard</p>
-                            <p>Scroll</p>
-                            <p>Sensitivity</p>
-                            <p>Movement</p>
-                        </div>
+                <div id="" class="flex flex-basis-50">
+                    <div class="add-widget added-widget w-full ">
+                        <h3>Add Widgets</h3>
+                        <form action="" style="border: none;">
+                            <label for="name">Name</label>
+                            <input type="text" name="name" placeholder="Enter title ">
+                            <label for="url">URL</label>
+                            <input type="text" name="url" placeholder="Enter URL of the website ">
+                            <div class="flex" style="justify-content: flex-end;margin-top: 20px;">
+                                <button class="btn-next">Add Widget</button>
+                            </div>
+                        </form>
                     </div>
-                    <div class="w-full tags">
-                        <h3>Associated Tickets</h3>
-                        <table class="w-full">
-                            <thead class="margin">
-                                <tr>
-                                    <th>RMA</th>
-                                    <th>Status</th>
-                                    <th>Customer Email</th>
-                                    <th>Hardware</th>
-                                    <th>Actions</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td>0011754379...</td>
-                                    <td style="color: red;">Awaiting arrival</td>
-                                    <td>georgia.young@example.com</td>
-                                    <td>Starlight-12 Poseidon</td>
-                                    <td>Oct 12, 2022</td>
-                                    <td>
-                                        <i class="fa-regular fa-eye"></i>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>0011754379...</td>
-                                    <td style="color: green;">Completed</td>
-                                    <td>georgia.young@example.com</td>
-                                    <td>Starlight-12 Poseidon</td>
-                                    <td>Oct 12, 2022</td>
-                                    <td>
-                                        <i class="fa-regular fa-eye"></i>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>0011754379...</td>
-                                    <td style="color: blue">In-progress</td>
-                                    <td>georgia.young@example.com</td>
-                                    <td>Starlight-12 Poseidon</td>
-                                    <td>Oct 12, 2022</td>
-                                    <td>
-                                        <i class="fa-regular fa-eye"></i>
-                                    </td>
-                                </tr>
-                                <td>0011754379...</td>
-                                <td style="color: red;">Awaiting arrival</td>
-                                <td>georgia.young@example.com</td>
-                                <td>Starlight-12 Poseidon</td>
-                                <td>Oct 12, 2022</td>
-                                <td>
-                                    <i class="fa-regular fa-eye"></i>
-                                </td>
-                                </tr>
-                                <tr>
-                                    <td>0011754379...</td>
-                                    <td style="color: green;">Completed</td>
-                                    <td>georgia.young@example.com</td>
-                                    <td>Starlight-12 Poseidon</td>
-                                    <td>Oct 12, 2022</td>
-                                    <td>
-                                        <i class="fa-regular fa-eye"></i>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>0011754379...</td>
-                                    <td style="color: blue">In-progress</td>
-                                    <td>georgia.young@example.com</td>
-                                    <td>Starlight-12 Poseidon</td>
-                                    <td>Oct 12, 2022</td>
-                                    <td>
-                                        <i class="fa-regular fa-eye"></i>
-                                    </td>
-                                </tr>
-                                <td>0011754379...</td>
-                                <td style="color: red;">Awaiting arrival</td>
-                                <td>georgia.young@example.com</td>
-                                <td>Starlight-12 Poseidon</td>
-                                <td>Oct 12, 2022</td>
-                                <td>
-                                    <i class="fa-regular fa-eye"></i>
-                                </td>
-                                </tr>
-                                <tr>
-                                    <td>0011754379...</td>
-                                    <td style="color: green;">Completed</td>
-                                    <td>georgia.young@example.com</td>
-                                    <td>Starlight-12 Poseidon</td>
-                                    <td>Oct 12, 2022</td>
-                                    <td>
-                                        <i class="fa-regular fa-eye"></i>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>0011754379...</td>
-                                    <td style="color: blue">In-progress</td>
-                                    <td>georgia.young@example.com</td>
-                                    <td>Starlight-12 Poseidon</td>
-                                    <td>Oct 12, 2022</td>
-                                    <td>
-                                        <i class="fa-regular fa-eye"></i>
-                                    </td>
-                                </tr>
+                    <div class="added-widget w-full">
+                    <h3>Added Widgets</h3>
+                    <table class="w-full">
+                        <thead class="margin">
+                            <tr>
+                                <th>Website</th>
+                                <th>Actions</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>https://tumblr.com</td>
 
-                            </tbody>
-                        </table>
-                    </div>
+                                <td>
+                                    <i class="fa-regular fa-pen-to-square"></i>
+                                    <i class="fa-regular fa-trash-can"></i>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>https://googleusercontent.com</td>
 
+                                <td>
+                                    <i class="fa-regular fa-pen-to-square"></i>
+                                    <i class="fa-regular fa-trash-can"></i>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>https://tumblr.com</td>
+
+                                <td>
+                                    <i class="fa-regular fa-pen-to-square"></i>
+                                    <i class="fa-regular fa-trash-can"></i>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>https://tumblr.com</td>
+
+                                <td>
+                                    <i class="fa-regular fa-pen-to-square"></i>
+                                    <i class="fa-regular fa-trash-can"></i>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>https://tumblr.com</td>
+
+                                <td>
+                                    <i class="fa-regular fa-pen-to-square"></i>
+                                    <i class="fa-regular fa-trash-can"></i>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>https://tumblr.com</td>
+
+                                <td>
+                                    <i class="fa-regular fa-pen-to-square"></i>
+                                    <i class="fa-regular fa-trash-can"></i>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>https://tumblr.com</td>
+
+                                <td>
+                                    <i class="fa-regular fa-pen-to-square"></i>
+                                    <i class="fa-regular fa-trash-can"></i>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>https://tumblr.com</td>
+
+                                <td>
+                                    <i class="fa-regular fa-pen-to-square"></i>
+                                    <i class="fa-regular fa-trash-can"></i>
+                                </td>
+                            </tr>
+                           
+                        </tbody>
+                    </table>
                 </div>
-
-                <div class="flex pagination">
-                    <p> Previous</p>
-                    <p class="active"> 1</p>
-                    <p> 2</p>
-                    <p> 3</p>
-                    <p> 4</p>
-                    <p> Next</p>
                 </div>
 
             </div>
 
         </div>
-
         <div id="myModalBlur" class="modal-back-blur " onclick="blurFunction()"></div>
         <!-- Modal content -->
         <div id="myModal" class="modal-content position-a">
@@ -522,29 +486,6 @@
                 <label><span style="color: red;">*</span>fields are required</label>
                 <button class="btn-next" onclick="nextFunction()">Next &nbsp;></button>
             </div>
-        </div>
-
-
-        <div id="tagBlur" class="tag-blur " onclick="tagBlurFunction()"></div>
-        <div id="tagModal" class="tag-content">
-            <p class="close2" onclick="tagHideFunction()">&times;</p>
-            <h2>Add Member</h2>
-            <form action="" class="add-tag-form">
-                <div class="w-full ">
-                        <label for="tagtitle">Tag Title </label>
-                        <input type="text" id="tag" firstname="tags" placeholder="Mouse ">
-                    </div>
-                <div class="w-full">
-                        <button>Add Tag</button>
-
-                    </div>
-                    <div class=" w-full">
-                        <button>Cancel</button>
-                    </div>
-                </div>
-
-            </form>
-           
         </div>
     </div>
 

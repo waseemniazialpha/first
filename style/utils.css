@@ -1,6 +1,9 @@
 .flex{
     display: flex;
 } 
+.flex-basis-50{
+    flex-basis: 50%;
+} 
 .gapitem{
     gap: 20px;
 }
