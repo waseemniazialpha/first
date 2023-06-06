@@ -948,7 +948,7 @@ input:checked + .slider:before {
   padding: 20px;
   border: 1px solid #E4E4E7;
   border-radius: 5px;
-  margin-right: 20px;
+  margin-left: 20px;
 }
 .added-widget td{
   padding-right: 20px;

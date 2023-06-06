@@ -22,6 +22,8 @@ var customerInfo = document.getElementById("customer-info");
 var process = document.getElementById("process");
 var processTwo = document.getElementById("process-2");
 
+// next button function 
+
 function nextFunction(){
   customerInfo.style.display = "none";
   hardwareInfo.style.display = "block";

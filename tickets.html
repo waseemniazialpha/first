@@ -215,9 +215,9 @@
                         <button class="tablinks" onclick="ticketData(event, 'all')">All</button>
                         <button class="tablinks" onclick="ticketData(event, 'awaiting')">Awaiting arrival (12)</button>
                         <button class="tablinks" onclick="ticketData(event, 'queue')">In-queue(1)</button>
-                        <button class="tablinks" onclick="ticketData(event, 'Tokyo')">In-progress (14)</button>
-                        <button class="tablinks" onclick="ticketData(event, 'Tokyo')">Custom1 (26)</button>
-                        <button class="tablinks" onclick="ticketData(event, 'Tokyo')">Custom2 (26)</button>
+                        <button class="tablinks" onclick="ticketData(event, 'progress')">In-progress (14)</button>
+                        <button class="tablinks" onclick="ticketData(event, 'custom1')">Custom1 (26)</button>
+                        <button class="tablinks" onclick="ticketData(event, 'custom2')">Custom2 (26)</button>
                     </div>
                     <div class="search">
                         <input type="search" name="searchcustomer" id="search"
@@ -571,6 +571,9 @@
                         </tbody>
                     </table>
                 </div>
+                <div id="progress" class="tabcontent"></div>
+                <div id="custom1" class="tabcontent"></div>
+                <div id="custom2" class="tabcontent"></div>
 
                 <div class="flex pagination">
                     <p> Previous</p>
