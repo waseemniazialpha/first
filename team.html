@@ -330,14 +330,18 @@
         </div>
         
 
-            <div id="myModalBlur" class="modal-back-blur " onclick="blurFunction()"></div>
-            <!-- Modal content -->
-            <div id="myModal" class="modal-content position-a">
-                <span class="close" onclick="hideFunction()">&times;</span>
-                <h2 style="text-align: center; margin: 20px 0;">Create Ticket</h2>
-                <div class="flex gapitem border">
+        <div id="myModalBlur" class="modal-back-blur " onclick="blurFunction()"></div>
+        <!-- Modal content -->
+        <div id="myModal" class="modal-content position-a">
+            <span class="close" onclick="hideFunction()">&times;</span>
+            <h2 style="text-align: center; margin: 20px 0;">Create Ticket</h2>
+
+            <!-- process 1st step  -->
+
+            <div id="process">
+                <div class="flex gapitem border align-items">
                     <div class="col-5 flex gapitem">
-                        <h4>1</h4>
+                        <h4 style="background-color: black;">1</h4>
                         <p>Customer</p>
                     </div>
                     <div class="col-5 flex gapitem">
@@ -355,6 +359,37 @@
                         <p>Ticket Issued</p>
                     </div>
                 </div>
+
+            </div>
+            <!-- process 2nd step  -->
+
+            <div id="process-2">
+                <div class="flex gapitem border align-items">
+                    <div class="col-5 flex gapitem">
+                        <h4><i class="fa-solid fa-check"></i></h4>
+                        <p>Customer</p>
+                    </div>
+                    <div class="col-5 flex gapitem">
+                        <img src="assets/images/connector.png" alt="">
+                    </div>
+                    <div class="col-5 flex gapitem">
+                        <h4 style="background-color: black;">2</h4>
+                        <p>Repair Ticket</p>
+                    </div>
+                    <div class="col-5 flex gapitem">
+                        <img src="assets/images/connector.png" alt="">
+                    </div>
+                    <div class="col-5 flex gapitem">
+                        <h4>3</h4>
+                        <p>Ticket Issued</p>
+                    </div>
+                </div>
+
+            </div>
+
+
+            <!-- customer Info -->
+            <div id="customer-info">
                 <div class="customer-title">
                     <h2>Customer Info</h2>
                     <p>Complete information related to the customer is required.</p>
@@ -409,17 +444,65 @@
                     <div class="flex w-full gapitem">
                         <div class="input w-full">
                             <label for="lname">Phone Number (optional)<span style="color: red;">*</span></label>
-                            <input type="text" id="phoneNumber" zipcode="phonenumber"
-                                placeholder="+1 20 6451 2559">
+                            <input type="text" id="phoneNumber" zipcode="phonenumber" placeholder="+1 20 6451 2559">
                         </div>
                     </div>
-    
+
                 </form>
-                <div class="flex justify-space">
-                    <label><span style="color: red;">*</span>fields are required</label>
-                    <button class="btn-next">Next &nbsp;></button>
-                </div>
             </div>
+
+            <!-- Hardware Info -->
+            <div id="hardware-info">
+                <div class="customer-title">
+                    <h2>Hardware Info</h2>
+                    <p>Complete information related to the repairing of the hardware.</p>
+                </div>
+                <form action="">
+                    <div class="flex w-full gapitem">
+                        <div class=" w-full">
+                            <label for="selecthardware">Select Hardware <span style="color: red;">*</span></label>
+                            <select name="select" id="" class="hard-select">
+                                <option value="Select your hardware"></option>
+                            </select>
+                        </div>
+                        <div class="w-full">
+                            <label for="lname" class="w-full">Is warranty still active? <span
+                                    style="color: red;">*</span></label>
+                            <div class="toggle">
+                                <p>Yes</p>
+                                <label class="switch">
+                                    <input type="checkbox">
+                                    <span class="slider round"></span>
+                                </label>
+                                <p>No</p>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="w-full issue">
+                        <h3>Customer Claimed Issue</h3>
+                        <div class="w-full">
+                            <label for="title">Title<span style="color: red;">*</span></label><br>
+                            <input type="text" id="title" firstname="customeremail" placeholder="Title of issue "
+                                style="width: 50%;">
+                        </div>
+                        <div class="w-full">
+                            <label for="description*">Description<span style="color: red;">*</span></label>
+                            <textarea name="description" id="description" cols="30" rows="3" class="w-full"></textarea>
+                        </div>
+                        <div class="w-full">
+                            <label for="title">Tags<span style="color: red;">*</span></label>
+                            <input type="text" tag="title" tag="tag" placeholder="tags ">
+                        </div>
+                    </div>
+
+                </form>
+            </div>
+            <div class="flex justify-space">
+                <label><span style="color: red;">*</span>fields are required</label>
+                <button class="btn-next" onclick="nextFunction()">Next &nbsp;></button>
+            </div>
+        </div>
 
 
             <div id="addMemberBlur" class="add-member-blur " onclick="memBlurFunction()"></div>

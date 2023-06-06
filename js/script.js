@@ -16,6 +16,19 @@ function blurFunction(){
   myModal.style.display = "none";
   myModalBlur.style.display = "none";
 }
+
+var hardwareInfo = document.getElementById("hardware-info");
+var customerInfo = document.getElementById("customer-info");
+var process = document.getElementById("process");
+var processTwo = document.getElementById("process-2");
+
+function nextFunction(){
+  customerInfo.style.display = "none";
+  hardwareInfo.style.display = "block";
+  process.style.display = "none";
+  processTwo.style.display = "block";
+}
+
 // function myModalClick(){
 //   myModal.style.display ="block"
 //   myModalBlur.style.display = "block";

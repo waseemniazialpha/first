@@ -1,0 +1,13 @@
+@media only screen and (max-width: 1100px) {
+    .display{
+        display: none;
+    }
+    .col-2{
+        flex-basis: 100%;
+    }
+  }
+@media only screen and (max-width: 1450px) {
+    .max-w-con {
+        max-width: 100%;
+    }
+  }
